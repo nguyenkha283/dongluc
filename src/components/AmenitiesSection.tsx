@@ -8,9 +8,9 @@ import {
   ShoppingBag, 
   Users2, 
   Dumbbell, 
-  Gamepad2, 
+  Trees, 
   GraduationCap,
-  Trees,
+  Waves,
   Sparkles,
   PhoneCall,
   LayoutGrid,
@@ -26,11 +26,13 @@ interface AmenitiesSectionProps {
 
 interface AmenityItem {
   slotId: string;
+  defaultUrl: string;
   number: string;
+  subTitle?: string;
   title: string;
   shortName: string;
   tag: string;
-  desc: string;
+  desc?: string;
   icon: React.ElementType;
 }
 
@@ -41,68 +43,84 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
   const [desktopView, setDesktopView] = useState<'grid' | 'carousel'>('grid');
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const resolveUrl = (slotId: string) => {
+  const resolveUrl = (slotId: string, fallbackUrl?: string) => {
+    if (images?.[slotId] && (images[slotId].startsWith('/uploads/') || images[slotId].startsWith('data:'))) {
+      return images[slotId];
+    }
+    if (fallbackUrl) return fallbackUrl;
     if (typeof getImageUrl === 'function') {
       return getImageUrl(slotId);
     }
-    return images?.[slotId] || DEFAULT_IMAGE_SLOTS[slotId]?.defaultUrl || '';
+    return images?.[slotId] || DEFAULT_IMAGE_SLOTS[slotId]?.defaultUrl || fallbackUrl || '';
   };
 
-  // 6 official amenities
+  // Hệ thống tiện ích chuẩn theo mẫu thiết kế
   const amenities: AmenityItem[] = [
     {
       slotId: 'amenity_mall',
+      defaultUrl: '/uploads/amenity_mall.png',
       number: '01',
-      title: 'Trung tâm thương mại',
+      subTitle: 'khối đế 6 tầng',
+      title: 'trung tâm thương mại',
       shortName: 'TTTM Khối đế',
-      tag: 'Khối đế 3 tầng',
+      tag: 'Khối đế 6 tầng',
       desc: 'Tổ hợp shophouse, siêu thị mini, cafe và ẩm thực cao cấp ngay dưới thềm nhà, đáp ứng trọn vẹn nhu cầu sinh hoạt thường nhật.',
       icon: ShoppingBag,
     },
     {
       slotId: 'amenity_community',
+      defaultUrl: '/uploads/8.png',
       number: '02',
-      title: 'Khu sinh hoạt cộng đồng',
-      shortName: 'Nhà cộng đồng',
+      subTitle: 'gắn kết cư dân',
+      title: 'khu sinh hoạt cộng đồng',
+      shortName: 'Khu cộng đồng',
       tag: 'Gắn kết cư dân',
       desc: 'Không gian văn hóa và kết nối sang trọng, nơi tổ chức các sự kiện gắn kết cộng đồng cư dân tinh hoa, văn minh tại 130 Hạ Đình.',
       icon: Users2,
     },
     {
       slotId: 'amenity_gym',
+      defaultUrl: '/uploads/13.png',
       number: '03',
-      title: 'Phòng Gym & Yoga',
+      subTitle: 'rèn luyện thể lực',
+      title: 'phòng gym & yoga',
       shortName: 'Gym & Yoga',
       tag: 'Thiết bị cao cấp',
       desc: 'Hệ thống máy tập nhập khẩu hiện đại với tầm nhìn thoáng rộng, giúp cư dân rèn luyện thể lực và tái tạo năng lượng mỗi ngày.',
       icon: Dumbbell,
     },
     {
-      slotId: 'amenity_kids',
+      slotId: 'amenity_park',
+      defaultUrl: '/uploads/13.png',
       number: '04',
-      title: 'Khu vui chơi trẻ em',
-      shortName: 'Khu vui chơi',
-      tag: 'Sân chơi an toàn',
-      desc: 'Sân chơi vận động sáng tạo được lót thảm cao su chống va đập, nhiều trò chơi liên hoàn giúp con trẻ thỏa sức nô đùa.',
-      icon: Gamepad2,
+      subTitle: 'không gian xanh an lành',
+      title: 'công viên cây xanh',
+      shortName: 'Công viên cây xanh',
+      tag: 'Không gian xanh',
+      desc: 'Mảng xanh mát lành kết hợp lối dạo bộ thư thái và đài phun nước sinh thái, mang lại bầu không khí trong lành cho cả gia đình.',
+      icon: Trees,
     },
     {
       slotId: 'amenity_kindergarten',
+      defaultUrl: '/uploads/11.png',
       number: '05',
-      title: 'Nhà trẻ thông minh',
-      shortName: 'Nhà trẻ nội khu',
+      subTitle: 'ươm mầm tương lai',
+      title: 'nhà trẻ thông minh',
+      shortName: 'Nhà trẻ thông minh',
       tag: 'Chuẩn quốc tế',
-      desc: 'Trường mầm non chất lượng cao nội khu, giúp các bậc phụ huynh an tâm tuyệt đối trong việc đưa đón và nuôi dạy con trẻ.',
+      desc: 'Môi trường mầm non hiện đại, trang thiết bị an toàn và giáo trình kích thích tư duy giúp con trẻ phát triển toàn diện ngay nội khu.',
       icon: GraduationCap,
     },
     {
-      slotId: 'amenity_garden',
+      slotId: 'amenity_lakeview',
+      defaultUrl: '/uploads/amenity_lakeview.png',
       number: '06',
-      title: 'Vườn trên cao & Sky Garden',
-      shortName: 'Sky Garden',
-      tag: 'Thư giãn an lành',
-      desc: 'Khu vườn dạo bộ trên cao với mảng xanh mát lành, điểm dừng chân thư thái ngắm nhìn trọn vẹn toàn cảnh hồ Hạ Đình.',
-      icon: Trees,
+      subTitle: 'tầm nhìn khoáng đạt',
+      title: 'view hồ hạ đình',
+      shortName: 'View hồ Hạ Đình',
+      tag: 'Tầm nhìn panorama',
+      desc: 'Tận hưởng trọn vẹn cảnh quan hồ nước thơ mộng, lộng gió và bầu trời hoàng hôn tuyệt mỹ, đón luồng vượng khí tài lộc mỗi ngày.',
+      icon: Waves,
     },
   ];
 
@@ -268,6 +286,7 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
                   <div className="absolute inset-0">
                     <ImageFrameSlot
                       slotId={item.slotId}
+                      defaultUrl={item.defaultUrl}
                       label={item.title}
                       aspectRatio="h-full w-full"
                       className="h-full w-full object-cover"
@@ -297,16 +316,19 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
 
                   {/* Bottom Info Block */}
                   <div className="relative z-10 p-3.5 sm:p-4 bg-gradient-to-t from-[#020917]/98 via-[#020917]/85 to-transparent pointer-events-none">
-                    <div className="flex items-center gap-1.5 text-[11px] font-bold text-amber-400 mb-1">
-                      <Icon className="w-3.5 h-3.5 text-amber-400" />
-                      <span>{item.tag}</span>
-                    </div>
-                    <h3 className="font-serif-luxury font-bold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors leading-snug drop-shadow-md">
+                    {item.subTitle && (
+                      <span className="text-[11px] sm:text-xs font-semibold text-amber-300/90 block mb-0.5 lowercase">
+                        {item.subTitle}
+                      </span>
+                    )}
+                    <h3 className="font-sans font-bold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors leading-snug drop-shadow-md lowercase first-letter:uppercase">
                       {item.title}
                     </h3>
-                    <p className="text-[11px] sm:text-xs text-slate-300 line-clamp-2 mt-1 leading-relaxed">
-                      {item.desc}
-                    </p>
+                    {item.desc && (
+                      <p className="text-[11px] sm:text-xs text-slate-300 line-clamp-3 mt-1.5 leading-relaxed">
+                        {item.desc}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
@@ -447,7 +469,7 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
             {/* Modal Main Image Area */}
             <div className="relative flex-1 bg-black/80 flex items-center justify-center min-h-[260px] sm:min-h-[320px] max-h-[58vh] overflow-hidden group">
               <img
-                src={resolveUrl(activeAmenity.slotId)}
+                src={resolveUrl(activeAmenity.slotId, activeAmenity.defaultUrl)}
                 alt={activeAmenity.title}
                 className="max-h-[58vh] w-full object-contain"
               />
@@ -480,10 +502,20 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
             {/* Modal Bottom Information & Thumbnails Bar */}
             <div className="p-3 sm:p-5 bg-[#051336] border-t border-sky-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4">
               <div className="space-y-1 max-w-xl">
-                <p className="text-xs sm:text-[13px] text-slate-200 leading-relaxed line-clamp-3 sm:line-clamp-none">
-                  {activeAmenity.desc}
-                </p>
-                <span className="text-[10px] sm:text-[11px] text-amber-300 font-medium block">
+                {activeAmenity.subTitle && (
+                  <span className="text-[11px] sm:text-xs font-semibold text-amber-300 block lowercase">
+                    {activeAmenity.subTitle}
+                  </span>
+                )}
+                <h4 className="text-sm sm:text-base font-bold text-white capitalize">
+                  {activeAmenity.title}
+                </h4>
+                {activeAmenity.desc && (
+                  <p className="text-xs sm:text-[13px] text-slate-200 leading-relaxed line-clamp-3 sm:line-clamp-none">
+                    {activeAmenity.desc}
+                  </p>
+                )}
+                <span className="text-[10px] sm:text-[11px] text-amber-300/80 font-medium block pt-1">
                   📍 Tổ hợp căn hộ cao cấp Động Lực Tower - 130 Hạ Đình, Thanh Xuân, Hà Nội
                 </span>
               </div>
@@ -502,7 +534,7 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
                     title={item.title}
                   >
                     <img 
-                      src={resolveUrl(item.slotId)} 
+                      src={resolveUrl(item.slotId, item.defaultUrl)} 
                       alt={item.title} 
                       className="w-full h-full object-cover" 
                     />

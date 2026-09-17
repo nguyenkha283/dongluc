@@ -30,8 +30,8 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'hero_building',
     name: 'Tòa Tháp Động Lực Tower (Hero)',
     section: 'Banner Đầu Trang',
-    defaultUrl: '/assets/dongluc_facade_matsau.jpg',
-    description: 'Ảnh phối cảnh mặt ngoài tòa tháp Động Lực Tower chính thức',
+    defaultUrl: '/uploads/hero_mo_dau.png',
+    description: 'Ảnh phối cảnh mở đầu tòa tháp Động Lực Tower chính thức',
     suggestedSize: '1200 x 900 px (Dọc hoặc 4:3)'
   },
   hero_creator_male: {
@@ -62,8 +62,8 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'creative_person',
     name: 'Cư Dân Thư Giãn',
     section: 'Không Gian Sáng Tạo',
-    defaultUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
-    description: 'Hình ảnh cô gái trẻ thưởng thức cafe bên cửa sổ căn hộ',
+    defaultUrl: '/uploads/creative_space_2.png',
+    description: 'Hình ảnh không gian sáng tạo căn hộ Động Lực Tower',
     suggestedSize: '600 x 600 px (Vuông)'
   },
   creative_interior: {
@@ -110,32 +110,32 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'map_location',
     name: 'Bản Đồ Vị Trí 130 Hạ Đình',
     section: 'Vị Trí Tâm Điểm',
-    defaultUrl: '/assets/lkv_dongluc_tower_01.jpg',
-    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình (LKV ĐỘNG LỰC TOWER-01)',
+    defaultUrl: '/uploads/location_lkv_dongluc.jpg',
+    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình',
     suggestedSize: '1000 x 700 px'
   },
   location_map: {
     id: 'location_map',
     name: 'Bản Đồ Kết Nối Vị Trí',
     section: 'Vị Trí Tâm Điểm',
-    defaultUrl: '/assets/lkv_dongluc_tower_01.jpg',
-    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình (LKV ĐỘNG LỰC TOWER-01)',
+    defaultUrl: '/uploads/location_lkv_dongluc.jpg',
+    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình',
     suggestedSize: '1000 x 700 px'
   },
   infra_metro: {
     id: 'infra_metro',
-    name: 'Tuyến Metro Cát Linh - Hà Đông',
+    name: 'Tuyến Metro Sắp Vận Hành',
     section: 'Lợi Thế Gia Tăng Giá Trị',
-    defaultUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80',
-    description: 'Đoàn tàu Metro trên cao hiện đại',
+    defaultUrl: '/uploads/infra_1_51df.jpg',
+    description: 'Tuyến Metro kết nối nhanh với trung tâm thành phố',
     suggestedSize: '600 x 400 px'
   },
   infra_road: {
     id: 'infra_road',
-    name: 'Tuyến Đường Huyết Mạch',
+    name: 'Tuyến Đường Huyết Mạch Mới',
     section: 'Lợi Thế Gia Tăng Giá Trị',
-    defaultUrl: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80',
-    description: 'Đại lộ Nguyễn Trãi và Vành Đai 3 ban đêm',
+    defaultUrl: '/uploads/tong_the_dem.jpg',
+    description: 'Phối cảnh tổng thể đêm và các tuyến đường kết nối huyết mạch',
     suggestedSize: '600 x 400 px'
   },
   infra_west: {
@@ -150,56 +150,56 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'infra_mega',
     name: 'Hệ Sinh Thái Đại Đô Thị',
     section: 'Lợi Thế Gia Tăng Giá Trị',
-    defaultUrl: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=600&q=80',
-    description: 'Quần thể đô thị văn minh xung quanh',
+    defaultUrl: '/uploads/infra_2_ac4e.jpg',
+    description: 'Hạ tầng kết nối quần thể đại đô thị văn minh',
     suggestedSize: '600 x 400 px'
   },
   amenity_mall: {
     id: 'amenity_mall',
-    name: 'Trung Tâm Thương Mại',
+    name: 'Khối Đế 6 Tầng - Trung Tâm Thương Mại',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=900&q=80',
-    description: 'Shophouse và trung tâm thương mại khối đế sầm uất',
+    defaultUrl: '/uploads/amenity_mall.png',
+    description: 'Tổ hợp shophouse, siêu thị mini, cafe và ẩm thực cao cấp ngay dưới thềm nhà, đáp ứng trọn vẹn nhu cầu sinh hoạt thường nhật.',
     suggestedSize: '800 x 600 px'
   },
   amenity_community: {
     id: 'amenity_community',
-    name: 'Khu Sinh Hoạt Cộng Đồng',
+    name: 'Gắn Kết Cư Dân - Khu Sinh Hoạt Cộng Đồng',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=900&q=80',
-    description: 'Clubhouse kết nối cư dân văn minh và gắn kết',
+    defaultUrl: '/uploads/8.png',
+    description: 'Không gian văn hóa và kết nối sang trọng, nơi tổ chức các sự kiện gắn kết cộng đồng cư dân tinh hoa, văn minh tại 130 Hạ Đình.',
     suggestedSize: '800 x 600 px'
   },
   amenity_gym: {
     id: 'amenity_gym',
     name: 'Phòng Gym & Yoga',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80',
+    defaultUrl: '/uploads/13.png',
     description: 'Trung tâm thể thao hiện đại với thiết bị nhập khẩu',
     suggestedSize: '800 x 600 px'
   },
-  amenity_kids: {
-    id: 'amenity_kids',
-    name: 'Khu Vui Chơi Trẻ Em',
+  amenity_park: {
+    id: 'amenity_park',
+    name: 'Công Viên Cây Xanh',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1596464716127-f2a829822391?auto=format&fit=crop&w=900&q=80',
-    description: 'Sân chơi liên hoàn sáng tạo an toàn cho trẻ',
+    defaultUrl: '/uploads/13.png',
+    description: 'Công viên cây xanh mát lành, đài phun nước và đường dạo bộ thoáng đãng nội khu.',
     suggestedSize: '800 x 600 px'
   },
   amenity_kindergarten: {
     id: 'amenity_kindergarten',
     name: 'Nhà Trẻ Thông Minh',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=900&q=80',
-    description: 'Trường mầm non chuẩn quốc tế nội khu',
+    defaultUrl: '/uploads/11.png',
+    description: 'Không gian giáo dục mầm non thông minh, an toàn, thân thiện với trang thiết bị học tập chuẩn quốc tế.',
     suggestedSize: '800 x 600 px'
   },
-  amenity_garden: {
-    id: 'amenity_garden',
-    name: 'Vườn Trên Cao & Sky Garden',
+  amenity_lakeview: {
+    id: 'amenity_lakeview',
+    name: 'View Hồ Hạ Đình',
     section: 'Tiện Ích Đa Dạng',
-    defaultUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80',
-    description: 'Vườn dạo bộ trên cao và không gian xanh thư giãn',
+    defaultUrl: '/uploads/amenity_lakeview.png',
+    description: 'Tầm nhìn panorama tuyệt mỹ hướng thẳng ra mặt nước hồ Hạ Đình thanh bình lộng gió.',
     suggestedSize: '800 x 600 px'
   },
   floorplan_2pn: {
@@ -534,7 +534,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'construction_site',
     name: 'Hình Ảnh Thực Tế Công Trường',
     section: 'Tiến Độ Hoàn Thiện',
-    defaultUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=1000&q=80',
+    defaultUrl: '/uploads/timeline_1_tongthe.png',
     description: 'Ảnh thi công thực tế tại 130 Hạ Đình',
     suggestedSize: '1000 x 650 px'
   },
@@ -542,7 +542,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'timeline_photo_1',
     name: 'Tiến độ Q3/2024 - Móng & 3 Hầm',
     section: 'Tiến Độ Hoàn Thiện',
-    defaultUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb186156a?auto=format&fit=crop&w=800&q=80',
+    defaultUrl: '/uploads/timeline_3_chungcu.jpg',
     description: 'Hoàn thành móng & hầm tiêu chuẩn cao',
     suggestedSize: '800 x 500 px'
   },
@@ -550,7 +550,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'timeline_photo_2',
     name: 'Tiến độ Q4/2024 - Thi Công Thân Tầng Nổi',
     section: 'Tiến Độ Hoàn Thiện',
-    defaultUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+    defaultUrl: '/uploads/timeline_2_24.png',
     description: 'Thi công kết cấu bê tông phần thân',
     suggestedSize: '800 x 500 px'
   },
@@ -558,7 +558,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'timeline_photo_3',
     name: 'Tiến độ Q2/2025 - Cất Nóc 24 Tầng',
     section: 'Tiến Độ Hoàn Thiện',
-    defaultUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+    defaultUrl: '/uploads/timeline_4_dji.jpg',
     description: 'Hoàn thành kết cấu 24 tầng Động Lực Tower',
     suggestedSize: '800 x 500 px'
   },
@@ -566,7 +566,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'timeline_photo_4',
     name: 'Tiến độ Q2/2027 - Bàn Giao Căn Hộ',
     section: 'Tiến Độ Hoàn Thiện',
-    defaultUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    defaultUrl: '/uploads/timeline_1_tongthe.png',
     description: 'Bàn giao không gian sáng tạo đúng cam kết',
     suggestedSize: '800 x 500 px'
   },
@@ -574,7 +574,7 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'legal_handover',
     name: 'Hồ Sơ Pháp Lý Dự Án',
     section: 'Pháp Lý Dự Án',
-    defaultUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
+    defaultUrl: '/uploads/legal_tong_the_ngay.png',
     description: 'Văn bản phê duyệt quy hoạch và mẫu HĐMB',
     suggestedSize: '800 x 500 px'
   },
@@ -582,8 +582,8 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'legal_documents',
     name: 'Hồ Sơ Pháp Lý Đầy Đủ',
     section: 'Pháp Lý Dự Án',
-    defaultUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
-    description: 'Giấy phép xây dựng 28/GPXD và hồ sơ pháp lý',
+    defaultUrl: '/uploads/legal_tong_the_ngay.png',
+    description: 'Giấy phép xây dựng và hồ sơ pháp lý minh bạch',
     suggestedSize: '800 x 500 px'
   }
 };
@@ -597,14 +597,32 @@ export interface ImageStyleConfig {
 
 const DEFAULT_IMAGE_STYLES: Record<string, ImageStyleConfig> = {
   hero_building: {
-    positionX: 20, // Perfectly centers the building tower in the frame
+    positionX: 50,
     positionY: 50,
-    zoom: 105,
+    zoom: 100,
     fit: 'cover'
   },
   project_overview_skyline: {
-    positionX: 30,
-    positionY: 20,
+    positionX: 50,
+    positionY: 50,
+    zoom: 100,
+    fit: 'cover'
+  },
+  creative_person: {
+    positionX: 50,
+    positionY: 50,
+    zoom: 100,
+    fit: 'cover'
+  },
+  location_map: {
+    positionX: 50,
+    positionY: 50,
+    zoom: 100,
+    fit: 'cover'
+  },
+  legal_documents: {
+    positionX: 50,
+    positionY: 50,
     zoom: 100,
     fit: 'cover'
   },
@@ -739,6 +757,27 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           }
         });
 
+        // Always prioritize updated server persisted images over stale local cache
+        Object.entries(persistedImgs).forEach(([k, v]) => {
+          if (v) {
+            safeMerged[k] = v;
+          }
+        });
+
+        // Enforce exact official amenity images requested by user
+        safeMerged.amenity_mall = '/uploads/amenity_mall.png';
+        safeMerged.amenity_community = '/uploads/8.png';
+        safeMerged.amenity_gym = '/uploads/13.png';
+        safeMerged.amenity_park = '/uploads/13.png';
+        safeMerged.amenity_kindergarten = '/uploads/11.png';
+        safeMerged.amenity_lakeview = '/uploads/amenity_lakeview.png';
+
+        // Enforce exact timeline photos rotation requested by user
+        safeMerged.timeline_photo_1 = '/uploads/timeline_3_chungcu.jpg';
+        safeMerged.timeline_photo_2 = '/uploads/timeline_2_24.png';
+        safeMerged.timeline_photo_3 = '/uploads/timeline_4_dji.jpg';
+        safeMerged.timeline_photo_4 = '/uploads/timeline_1_tongthe.png';
+
         return safeMerged;
       }
     } catch {
@@ -746,6 +785,19 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         localStorage.removeItem('dongluc_custom_images');
       } catch {}
     }
+
+    initial.amenity_mall = '/uploads/amenity_mall.png';
+    initial.amenity_community = '/uploads/8.png';
+    initial.amenity_gym = '/uploads/13.png';
+    initial.amenity_park = '/uploads/13.png';
+    initial.amenity_kindergarten = '/uploads/11.png';
+    initial.amenity_lakeview = '/uploads/amenity_lakeview.png';
+
+    initial.timeline_photo_1 = '/uploads/timeline_3_chungcu.jpg';
+    initial.timeline_photo_2 = '/uploads/timeline_2_24.png';
+    initial.timeline_photo_3 = '/uploads/timeline_4_dji.jpg';
+    initial.timeline_photo_4 = '/uploads/timeline_1_tongthe.png';
+
     return initial;
   });
 
@@ -753,7 +805,11 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     try {
       const saved = localStorage.getItem('dongluc_custom_image_styles');
       if (saved) {
-        return { ...DEFAULT_IMAGE_STYLES, ...JSON.parse(saved) };
+        const merged = { ...DEFAULT_IMAGE_STYLES, ...JSON.parse(saved) };
+        if (persistedData?.styles) {
+          Object.assign(merged, persistedData.styles);
+        }
+        return merged;
       }
     } catch {
       try {
@@ -829,7 +885,13 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     getAllImagesFromDb().then((dbImages) => {
       if (active && dbImages && Object.keys(dbImages).length > 0) {
         setImages((prev) => {
-          const updated = { ...prev, ...dbImages };
+          const updated = { ...prev };
+          // Only adopt user-uploaded custom images if they don't override official amenity or timeline images
+          Object.entries(dbImages).forEach(([k, v]) => {
+            if (v && !k.startsWith('amenity_') && !k.startsWith('timeline_photo_')) {
+              updated[k] = v;
+            }
+          });
           // Automatically trigger background persist to server if there are unpersisted custom images
           const unpersisted = Object.entries(dbImages).some(
             ([k, v]) => v && v.startsWith('data:')

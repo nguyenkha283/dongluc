@@ -29,7 +29,9 @@ export const ImageFrameSlot: React.FC<ImageFrameSlotProps> = ({
   const slotInfo = DEFAULT_IMAGE_SLOTS[slotId];
   const displayLabel = label || slotInfo?.name || slotId;
   const fallbackDefault = defaultUrl || slotInfo?.defaultUrl || 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80';
-  const rawUrl = images[slotId] || defaultUrl || slotInfo?.defaultUrl || fallbackDefault;
+  const rawUrl = images[slotId]?.startsWith('data:') 
+    ? images[slotId] 
+    : (defaultUrl || images[slotId] || slotInfo?.defaultUrl || fallbackDefault);
   const [imgSrc, setImgSrc] = useState<string>(rawUrl);
 
   // Sync state if rawUrl changes

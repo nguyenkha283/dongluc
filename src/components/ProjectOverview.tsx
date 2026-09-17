@@ -78,8 +78,8 @@ export const ProjectOverview: React.FC<ProjectOverviewProps> = ({ onOpenConsulta
           {/* ============================================================ */}
           {/* LEFT COLUMN: Prominent Architectural Building Showcase (5 Cols) */}
           {/* ============================================================ */}
-          <div className="lg:col-span-5 flex flex-col">
-            <div className="relative rounded-3xl overflow-hidden border-2 border-sky-400/30 hover:border-sky-400/60 bg-[#05143a]/90 shadow-2xl hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] flex-1 flex flex-col transition-all duration-500 min-h-[480px] sm:min-h-[560px] lg:min-h-[620px] group">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center w-full">
+            <div className="relative rounded-3xl overflow-hidden border-2 border-sky-400/30 hover:border-sky-400/60 bg-[#05143a]/90 shadow-2xl hover:shadow-[0_0_35px_rgba(56,189,248,0.25)] w-full max-w-xl lg:max-w-none mx-auto flex-1 flex flex-col transition-all duration-500 min-h-[460px] sm:min-h-[540px] lg:min-h-[620px] group">
               
               {/* Top Bar on Building Image */}
               <div className="absolute top-3 inset-x-3 z-20 flex items-center justify-between gap-2 pointer-events-auto">

@@ -203,53 +203,6 @@ function AppContent() {
       {/* Section 12: Đăng ký nhận thông tin dự án (Inline form + Hotline 0565 130 130) */}
       <LeadCaptureSection />
 
-      {/* Section 13: Apartment Inventory & Interactive Floorplan Browser */}
-      <section id="apartments" className="py-20 bg-transparent relative overflow-hidden">
-        {/* Key Visual Sunset Highway Light Trails */}
-        <SectionKVDecoration variant="highway-trails" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {/* Section Header */}
-          <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-10">
-            <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold tracking-widest uppercase mb-2">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>BẢNG HÀNG & GIÁ BÁN CHI TIẾT</span>
-            </div>
-            <h2 className="font-serif-luxury text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight mb-2 uppercase">
-              GIỎ HÀNG 156 CĂN HỘ ĐỘNG LỰC TOWER
-            </h2>
-            <p className="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
-              Giá chỉ từ <strong className="text-amber-300">7x triệu/m² ĐÃ BAO GỒM VAT</strong>. Tiêu chuẩn bàn giao linh hoạt: <strong>Bàn giao thô hoặc Hoàn thiện trọn gói</strong> theo nhu cầu, ưu đãi tài chính hỗ trợ vay 70%.
-            </p>
-          </div>
-
-          {/* Interactive Filters */}
-          <ApartmentFilter
-            selectedType={selectedType}
-            onTypeChange={setSelectedType}
-            priceRange={priceRange}
-            onPriceRangeChange={setPriceRange}
-            directionFilter={directionFilter}
-            onDirectionFilterChange={setDirectionFilter}
-            sortBy={sortBy}
-            onSortChange={setSortBy}
-            viewMode={viewMode}
-            onViewModeChange={setViewMode}
-            onReset={resetFilters}
-            hasActiveFilters={hasActiveFilters}
-            totalCount={filteredUnits.length}
-          />
-
-          {/* Units List */}
-          <ApartmentList
-            units={filteredUnits}
-            viewMode={viewMode}
-            onSelectUnit={setSelectedUnitForDetail}
-            onBookViewing={handleBookViewing}
-            onResetFilters={resetFilters}
-          />
-        </div>
-      </section>
-
       {/* Frequently Asked Questions */}
       <FAQSection
         onOpenConsultation={() => {

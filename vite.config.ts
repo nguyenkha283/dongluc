@@ -9,6 +9,27 @@ function imagePersistencePlugin(): Plugin {
     name: 'image-persistence-plugin',
     configureServer(server) {
       server.middlewares.use(async (req, res, next) => {
+        // Explicitly serve uploads folder images directly with proper MIME type
+        if (req.url && req.url.startsWith('/uploads/')) {
+          const cleanUrl = req.url.split('?')[0];
+          const filePath = path.resolve(process.cwd(), 'public', cleanUrl.slice(1));
+          if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+            const ext = path.extname(filePath).toLowerCase();
+            const mimeTypes: Record<string, string> = {
+              '.png': 'image/png',
+              '.jpg': 'image/jpeg',
+              '.jpeg': 'image/jpeg',
+              '.webp': 'image/webp',
+              '.svg': 'image/svg+xml',
+              '.gif': 'image/gif',
+            };
+            res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream');
+            res.setHeader('Cache-Control', 'public, max-age=3600');
+            fs.createReadStream(filePath).pipe(res);
+            return;
+          }
+        }
+
         if (req.url === '/api/save-custom-images' && req.method === 'POST') {
           let body = '';
           req.on('data', (chunk) => {

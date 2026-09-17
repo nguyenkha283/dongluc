@@ -31,6 +31,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
   const steps = [
     {
       slotId: 'timeline_photo_1',
+      defaultUrl: '/uploads/timeline_3_chungcu.jpg',
       quarter: 'Q3/2024',
       phase: 'Giai đoạn 1',
       title: 'Hoàn thành móng & hầm',
@@ -40,6 +41,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
     },
     {
       slotId: 'timeline_photo_2',
+      defaultUrl: '/uploads/timeline_2_24.png',
       quarter: 'Q4/2024',
       phase: 'Giai đoạn 2',
       title: 'Thi công thân tầng nổi',
@@ -49,6 +51,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
     },
     {
       slotId: 'timeline_photo_3',
+      defaultUrl: '/uploads/timeline_4_dji.jpg',
       quarter: 'Q2/2025',
       phase: 'Giai đoạn 3',
       title: 'Cất nóc 24 tầng',
@@ -58,6 +61,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
     },
     {
       slotId: 'timeline_photo_4',
+      defaultUrl: '/uploads/timeline_1_tongthe.png',
       quarter: 'Q2/2027',
       phase: 'Giai đoạn 4',
       title: 'Bàn giao căn hộ',
@@ -234,6 +238,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
               <div className="rounded-xl overflow-hidden bg-slate-950 border border-slate-700/80 relative shadow-inner mb-2.5 group">
                 <ImageFrameSlot
                   slotId={currentStep.slotId}
+                  defaultUrl={currentStep.defaultUrl}
                   label={`Tiến độ ${currentStep.quarter}`}
                   aspectRatio="aspect-[16/10]"
                   alt={`Tiến độ thi công Động Lực Tower ${currentStep.quarter}`}
@@ -298,6 +303,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
                   <div className="rounded-lg overflow-hidden bg-slate-950 border border-slate-800 relative mb-1.5">
                     <ImageFrameSlot
                       slotId={step.slotId}
+                      defaultUrl={step.defaultUrl}
                       label={`Tiến độ ${step.quarter}`}
                       aspectRatio="aspect-[16/11]"
                       alt={`Tiến độ ${step.quarter}`}
@@ -362,6 +368,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
                   <div className="relative">
                     <ImageFrameSlot
                       slotId={step.slotId}
+                      defaultUrl={step.defaultUrl}
                       label={`Tiến độ ${step.quarter}`}
                       aspectRatio="aspect-[16/11]"
                       alt={`Tiến độ thi công Động Lực Tower ${step.quarter}`}
