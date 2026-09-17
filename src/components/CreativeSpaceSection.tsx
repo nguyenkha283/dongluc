@@ -39,8 +39,8 @@ export const CreativeSpaceSection: React.FC<CreativeSpaceSectionProps> = ({
 
             {/* Header text */}
             <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-[10px] font-black tracking-[0.25em] text-amber-400 uppercase block">
+              <div className="flex items-center gap-2 mb-1 font-sans">
+                <span className="text-[10px] sm:text-[11px] font-black tracking-[0.2em] text-amber-400 uppercase block font-sans">
                   ĐỘNG LỰC TOWER • PHONG CÁCH SỐNG
                 </span>
               </div>
@@ -52,9 +52,9 @@ export const CreativeSpaceSection: React.FC<CreativeSpaceSectionProps> = ({
               </div>
 
               {/* Bold Red Highlight Badge matching poster */}
-              <div className="inline-flex items-center gap-1.5 mt-1 px-3 py-1 rounded-md bg-gradient-to-r from-red-600 to-rose-600 text-white font-black text-[10px] sm:text-[11px] uppercase tracking-wider shadow-md shadow-red-600/30">
-                <Sparkles className="w-3 h-3 text-amber-300" />
-                <span>TỰ DO KIẾN TẠO TỔ ẤM THEO CÁCH CỦA BẠN</span>
+              <div className="inline-flex items-center gap-1.5 mt-1 px-3 py-1 rounded-md bg-gradient-to-r from-red-600 to-rose-600 text-white font-black text-[10px] sm:text-[11px] uppercase tracking-wider shadow-md shadow-red-600/30 font-sans whitespace-nowrap">
+                <Sparkles className="w-3 h-3 text-amber-300 shrink-0" />
+                <span className="font-sans whitespace-nowrap">TỰ DO KIẾN TẠO TỔ ẤM THEO CÁCH CỦA BẠN</span>
               </div>
             </div>
 

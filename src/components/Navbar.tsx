@@ -43,27 +43,27 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Dual Brand Logos: Động Lực Tower & CEN LAND */}
-          <div className="flex items-center gap-3 sm:gap-3.5">
-            <a href="#" className="flex items-center group" title="Động Lực Tower 130 Hạ Đình">
+          <div className="flex items-center gap-3 sm:gap-3.5 shrink-0">
+            <a href="#" className="flex items-center group shrink-0" title="Động Lực Tower 130 Hạ Đình">
               {/* Động Lực Official Logo */}
               <DongLucLogo variant="horizontal" theme="white" />
             </a>
 
-            <div className="h-8 w-px bg-slate-700/80 hidden sm:block" />
+            <div className="h-8 w-px bg-slate-700/80 hidden sm:block shrink-0" />
 
             {/* Cen Land Official Logo - Synchronized Size */}
-            <div className="hidden sm:flex items-center" title="Cen Land - Đơn vị phân phối chiến lược">
+            <div className="hidden sm:flex items-center shrink-0" title="Cen Land - Đơn vị phân phối chiến lược">
               <CenLandLogo variant="horizontal" theme="white" size="md" />
             </div>
           </div>
 
-          {/* Desktop Nav Links matching exact mockup */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2 text-xs font-semibold text-slate-200">
+          {/* Desktop Nav Links - Single line guaranteed with whitespace-nowrap */}
+          <nav className="hidden lg:flex items-center flex-nowrap shrink-0 gap-1 xl:gap-2.5 text-xs xl:text-[13px] font-semibold text-slate-200 whitespace-nowrap font-sans">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/70 transition-all"
+                className="whitespace-nowrap shrink-0 px-2 xl:px-2.5 py-1.5 rounded-lg hover:text-white hover:bg-slate-800/70 transition-all leading-normal"
               >
                 {link.name}
               </a>
@@ -71,24 +71,24 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Right Action Tools & Buttons */}
-          <div className="flex items-center gap-2 sm:gap-2.5">
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0 flex-nowrap">
             {/* Direct Hotline */}
             <a
               href={`tel:${PROJECT_INFO.hotline.replace(/\s+/g, '')}`}
-              className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 text-white border border-slate-700/80 hover:border-red-500 transition-all text-xs font-bold"
+              className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 text-white border border-slate-700/80 hover:border-red-500 transition-all text-xs font-bold whitespace-nowrap shrink-0 shadow-sm"
             >
-              <Phone className="w-3 h-3 text-red-400 animate-pulse" />
-              <span>{PROJECT_INFO.hotline}</span>
+              <Phone className="w-3 h-3 text-red-400 animate-pulse shrink-0" />
+              <span className="whitespace-nowrap font-sans font-bold tracking-wide">{PROJECT_INFO.hotline}</span>
             </a>
 
             {/* Red "ĐĂNG KÝ TƯ VẤN ->" Button - Compact on mobile, full on desktop */}
             <button
               onClick={onOpenConsultation}
-              className="shimmer-sweep px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-xs sm:text-sm tracking-wide shadow-lg shadow-red-600/30 transition-all flex items-center gap-1 sm:gap-1.5 hover:scale-[1.03] active:scale-98 cursor-pointer border border-red-400/40 shrink-0"
+              className="shimmer-sweep px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-xs sm:text-sm tracking-wide shadow-lg shadow-red-600/30 transition-all flex items-center gap-1 sm:gap-1.5 hover:scale-[1.03] active:scale-98 cursor-pointer border border-red-400/40 shrink-0 whitespace-nowrap font-sans"
             >
               <span className="sm:hidden">Tư Vấn</span>
               <span className="hidden sm:inline">ĐĂNG KÝ TƯ VẤN</span>
-              <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300" />
+              <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
             </button>
 
             {/* Mobile Menu Toggle */}

@@ -751,28 +751,60 @@ export const FAQS = [
 
 export const VIRTUAL_ADVISOR_KNOWLEDGE = [
   {
-    keywords: ['chính sách', 'chiết khấu', 'thanh toán sớm', 'lãi suất', 'ưu đãi', 'csbh'],
-    reply: 'Kính chào Quý khách! Chính sách bán hàng Động Lực Tower mới nhất gồm 4 ưu đãi đặc quyền:\n1. Chiết khấu đặt cọc: Căn 2N: 3% | Căn 3N: 6% (đến ngày 31/7/2026)\n2. Chiết khấu TT sớm: 50% chiết khấu 9% | 70% chiết khấu 10% | 95% chiết khấu 11% (chưa VAT & KPBT)\n3. Chiết khấu TT tiến độ: 5% (chưa VAT & KPBT)\n4. Hỗ trợ lãi suất 0% với 65% GTCH đến 31/12/2027 (trần 12%)\nQuý khách để lại số điện thoại để Cen Land gửi bảng tính dòng tiền chi tiết ạ!'
+    keywords: ['chủ đầu tư', 'cđt', 'động lực', 'cen land', 'cenland', 'phát triển', 'phân phối'],
+    reply: 'Kính chào Quý khách! Dự án Động Lực Tower được triển khai bởi:\n• Chủ đầu tư: Công ty Cổ phần Tập đoàn Động Lực (Động Lực Group).\n• Đơn vị tư vấn & phát triển kinh doanh độc quyền: Công ty Cổ phần Bất động sản Thế Kỷ (Cen Land).\nPháp lý minh bạch 100%, sở hữu sổ hồng lâu dài, ký HĐMB trực tiếp với CĐT.'
   },
   {
-    keywords: ['giá', 'bao nhiêu', '7x', 'vat', 'm2', 'bảng giá'],
-    reply: 'Kính chào Quý khách! Giá bán Động Lực Tower hiện tại CHỈ TỪ 7x TRIỆU/M² ĐÃ BAO GỒM THUẾ VAT!\n• Căn 2PN (64.68 - 72.68 m²): Từ khoảng 4.68 tỷ - 5.39 tỷ (đã gồm VAT)\n• Căn 3PN (86.5 - 102.4 m²): Từ khoảng 6.47 tỷ - 7.8 tỷ (đã gồm VAT)\nChính sách giá này áp dụng trong chiến dịch Không Gian Sáng Tạo đến HẾT THÁNG 9/2026!'
+    keywords: ['pháp lý', 'sổ hồng', 'sổ đỏ', 'gpxd', 'giấy phép xây dựng', 'hợp đồng mua bán', 'hdmb', 'lâu dài', 'vĩnh viễn'],
+    reply: 'Dạ, pháp lý Động Lực Tower hoàn thiện 100%:\n• Sổ hồng lâu dài (sở hữu vĩnh viễn) trao tay cư dân.\n• Giấy phép xây dựng số 42/GPXD do Sở Xây Dựng Hà Nội cấp phép (24 tầng nổi + 3 tầng hầm).\n• Đã nghiệm thu hầm móng và đủ điều kiện bán nhà ở hình thành trong tương lai.'
   },
   {
-    keywords: ['thô', 'không gian sáng tạo', 'bàn giao thô', 'nội thất', '300tr', 'quà tặng'],
-    reply: 'Dạ, hiện tại dự án đang triển khai CHIẾN DỊCH MỚI: KHÔNG GIAN SÁNG TẠO (BÀN GIAO THÔ), không còn áp dụng chương trình quà tặng nội thất 300 triệu nữa ạ.\nCăn hộ bàn giao thô giúp Quý khách:\n1. Cửa chính chống cháy & ban công kính hoàn chỉnh\n2. Hệ thống đi dây điện âm tường đầy đủ\n3. Đầu chờ cấp thoát nước sẵn sàng\n4. Tự do hoàn thiện theo phong cách riêng, tiết kiệm tối đa chi phí!'
+    keywords: ['chính sách', 'chiết khấu', 'thanh toán sớm', 'lãi suất', 'ưu đãi', 'csbh', 'khuyến mại'],
+    reply: 'Kính chào Quý khách! Chính sách bán hàng Động Lực Tower gồm 4 gói ưu đãi đặc quyền:\n1. Chiết khấu đặt cọc: Căn 2PN chiết khấu 3% | Căn 3PN chiết khấu 6% (đến 31/7/2026)\n2. Chiết khấu TT sớm: 50% chiết khấu 9% | 70% chiết khấu 10% | 95% chiết khấu 11% (chưa VAT & KPBT)\n3. Chiết khấu TT tiến độ: 5% (chưa VAT & KPBT)\n4. Hỗ trợ lãi suất 0% với 65% GTCH đến 31/12/2027 (trần 12%), ân hạn nợ gốc.'
   },
   {
-    keywords: ['địa chỉ', 'ở đâu', 'hạ đình', 'thanh xuân', 'vị trí'],
-    reply: 'Dự án Động Lực Tower tọa lạc chính xác tại số 130 Hạ Đình, Quận Thanh Xuân, Hà Nội. Vị trí trung tâm kết nối trực tiếp Nguyễn Trãi, Vành Đai 3, cách ga Metro Thượng Đình chỉ 800m và cách Royal City chỉ 7-10 phút di chuyển!'
+    keywords: ['ngân hàng', 'vay', 'lãi suất 0%', 'hỗ trợ lãi suất', 'vietcombank', 'mbbank', 'bidv', 'ân hạn'],
+    reply: 'Dạ, chính sách hỗ trợ tài chính từ ngân hàng:\n• Ngân hàng hỗ trợ vay 65% - 70% GTCH.\n• Hỗ trợ lãi suất 0% cho 65% giá trị căn hộ đến ngày 31/12/2027 (trần 12%).\n• Ân hạn nợ gốc trong suốt thời gian hỗ trợ lãi suất.\n• Ngân hàng đối tác: Vietcombank, MB Bank, BIDV... Thời hạn vay lên tới 20-25 năm.'
   },
   {
-    keywords: ['tiến độ', 'khi nào giao', 'bàn giao', 'thời gian'],
-    reply: 'Tiến độ Động Lực Tower đang được đẩy mạnh thi công:\n• Q3/2025: Đã hoàn thành toàn bộ 3 tầng hầm & móng\n• Q2/2026: Dự kiến cất nóc tầng 24\n• Q4/2026: Hoàn thiện mặt ngoài\n• Q2/2027: Bàn giao căn hộ cho cư dân.'
+    keywords: ['giá', 'bao nhiêu', '7x', 'vat', 'm2', 'bảng giá', 'tổng tiền'],
+    reply: 'Kính chào Quý khách! Giá bán Động Lực Tower hiện tại CHỈ TỪ 7x TRIỆU/M² ĐÃ BAO GỒM 100% THUẾ VAT!\n• Căn 2PN (64.68 - 72.68 m²): Từ khoảng 4.68 tỷ - 5.39 tỷ VNĐ (đã gồm VAT)\n• Căn 3PN (86.5 - 102.4 m²): Từ khoảng 6.47 tỷ - 7.8 tỷ VNĐ (đã gồm VAT)\nMức giá này áp dụng trong chiến dịch Không Gian Sáng Tạo đến HẾT THÁNG 9/2026!'
   },
   {
-    keywords: ['thời hạn', 'tháng 9', 'hạn', 'khi nào hết hạn'],
-    reply: 'Chiến dịch Không Gian Sáng Tạo với mức giá từ 7x triệu/m² (đã có VAT) áp dụng ĐẾN HẾT THÁNG 9/2026. Số lượng căn hộ toàn dự án chỉ có 156 căn VIP, Quý khách nên đăng ký sớm để giữ căn đẹp!'
+    keywords: ['thô', 'không gian sáng tạo', 'bàn giao thô', 'nội thất', '300tr', 'quà tặng', 'tiêu chuẩn bàn giao'],
+    reply: 'Dạ, hiện tại dự án đang triển khai CHIẾN DỊCH: KHÔNG GIAN SÁNG TẠO (BÀN GIAO THÔ), không còn áp dụng chương trình quà tặng nội thất 300 triệu cũ.\nCăn hộ bàn giao thô giúp Quý khách:\n• Tiết kiệm ngay 200 - 400 triệu đồng so với căn hoàn thiện.\n• Danh mục bàn giao đã có: Cửa chống cháy khóa từ, vách kính cách âm, đi dây điện âm tường, đầu chờ cấp thoát nước, đầu chờ ống đồng điều hòa.\n• Tự do thiết kế và hoàn thiện nội thất theo gu riêng của gia đình.'
+  },
+  {
+    keywords: ['căn 2', '2pn', '2 phòng ngủ', '2 ngủ', 'căn 01', 'căn 02', 'căn 04', 'căn 05'],
+    reply: 'Dạ, dòng Căn hộ 2 Phòng Ngủ tại Động Lực Tower:\n• Thiết kế: 2PN + 2WC + 1 Logia, diện tích từ 64.68 m² đến 72.68 m².\n• Căn 01 (70.50 - 70.67 m²): Ban công Nam view trọn Hồ Hạ Đình cực đẹp.\n• Căn 02 (66.48 - 66.92 m²): Ban công Nam view hồ, giá từ 4.81 tỷ (có VAT).\n• Căn 04 (71.74 - 72.68 m²): Ban công Đông Nam mát mẻ.\n• Căn 05 (64.68 - 65.51 m²): Giá tối ưu nhất từ 4.68 tỷ (có VAT).'
+  },
+  {
+    keywords: ['căn 3', '3pn', '3 phòng ngủ', '3 ngủ', 'căn 03', 'căn 06', 'căn 07', 'căn 08'],
+    reply: 'Dạ, dòng Căn hộ 3 Phòng Ngủ tại Động Lực Tower:\n• Thiết kế: 3PN + 2WC + 2 Logia, diện tích từ 86.50 m² đến 102.40 m².\n• Căn 03 (93.12 - 93.38 m²): Căn góc 2 mặt thoáng view Hồ Hạ Đình.\n• Căn 06 (100.91 - 102.40 m²): Căn hộ diện tích lớn nhất, không gian Sky Villa rộng rãi.\n• Căn 07 (86.50 - 87.05 m²): 3 phòng ngủ đều có ánh sáng tự nhiên.\n• Căn 08 (93.12 - 93.38 m²): Căn góc view thoáng đãng, giá từ 6.47 tỷ (có VAT).'
+  },
+  {
+    keywords: ['quy mô', 'mấy tầng', 'bao nhiêu tầng', 'mấy hầm', 'mấy căn', 'thang máy', 'đỗ xe', 'gửi xe', 'chỗ để xe', 'ô tô'],
+    reply: 'Dạ, thông số kỹ thuật Động Lực Tower:\n• Quy mô: 01 tòa tháp 24 tầng nổi + 3 tầng hầm đỗ xe rộng rãi.\n• Số lượng căn hộ: Duy nhất 156 căn hộ VIP (~8 căn/sàn).\n• Thang máy: 4 thang máy tốc độ cao (chỉ ~39 căn/thang, không lo tắc thang máy).\n• Chỗ đỗ xe: 3 tầng hầm đáp ứng 100% chỗ đỗ ô tô và xe máy cho cư dân.'
+  },
+  {
+    keywords: ['tiện ích', 'bể bơi', 'gym', 'nhà trẻ', 'sinh hoạt cộng đồng', 'công viên', 'thương mại'],
+    reply: 'Dạ, hệ thống tiện ích đẳng cấp tại Động Lực Tower:\n• 3 tầng khối đế là Trung tâm thương mại dịch vụ sầm uất.\n• Khu sinh hoạt cộng đồng đa năng rộng rãi (đã cập nhật ảnh thực tế).\n• Phòng Gym & Fitness hiện đại, khu tập Yoga.\n• Nhà trẻ thông minh nội khu an toàn, thuận tiện đưa đón con nhỏ.\n• Công viên cây xanh, đường dạo bộ và cách Hồ Hạ Đình chỉ 100m.\n• An ninh đa lớp 24/7 với thẻ từ phân tầng.'
+  },
+  {
+    keywords: ['địa chỉ', 'ở đâu', 'hạ đình', 'thanh xuân', 'vị trí', 'hồ hạ đình', 'giao thông'],
+    reply: 'Dự án Động Lực Tower tọa lạc tại số 130 Hạ Đình, Phường Hạ Đình, Quận Thanh Xuân, Hà Nội.\n• Cách Hồ Hạ Đình chỉ 100m (2 phút đi bộ).\n• Cách ga Metro Thượng Đình (Cát Linh - Hà Đông) chỉ 800m.\n• Kết nối thuận tiện trục Nguyễn Trãi (500m), Vành Đai 3 (1km) và Royal City (7-10 phút).'
+  },
+  {
+    keywords: ['tiến độ', 'khi nào giao', 'bàn giao', 'thời gian', 'cất nóc'],
+    reply: 'Tiến độ Động Lực Tower thực tế:\n• Q3/2024: Đã hoàn thành 3 tầng hầm & phần móng.\n• Q4/2024: Đang thi công kết cấu phần thân tầng nổi.\n• Q2/2025: Dự kiến cất nóc toàn bộ 24 tầng.\n• Q2/2027: Bàn giao căn hộ chính thức cho cư dân về ở.'
+  },
+  {
+    keywords: ['thời hạn', 'tháng 9', 'hạn', 'khi nào hết hạn', 'hạn chót'],
+    reply: 'Chiến dịch Không Gian Sáng Tạo với mức giá từ 7x triệu/m² (đã có VAT) áp dụng ĐẾN HẾT THÁNG 9/2026. Số lượng căn hộ toàn dự án chỉ có 156 căn VIP, Quý khách nên đăng ký sớm để chọn tầng đẹp!'
+  },
+  {
+    keywords: ['xe đưa đón', 'xem nhà', 'xem thực tế', 'tham quan', 'hotline', 'liên hệ'],
+    reply: 'Dạ, Cen Land có xe ô tô chuyên dụng đưa đón Quý khách tham quan thực tế dự án 130 Hạ Đình hoàn toàn MIỄN PHÍ. Quý khách có thể bấm nút "Đăng ký xe đón xem dự án" hoặc gọi Hotline 0565 130 130 để đặt lịch ngay ạ!'
   }
 ];
 

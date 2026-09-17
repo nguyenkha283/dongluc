@@ -54,11 +54,11 @@ export const Hero: React.FC<HeroProps> = ({
               href={PROJECT_INFO.googleMapsUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 hover:bg-slate-900 border border-amber-400/40 hover:border-amber-400 backdrop-blur-md shadow-md transition-all hover:scale-105 group cursor-pointer"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 hover:bg-slate-900 border border-amber-400/40 hover:border-amber-400 backdrop-blur-md shadow-md transition-all hover:scale-105 group cursor-pointer font-sans"
               title="Xem vị trí 130 Hạ Đình trên Google Maps"
             >
-              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-              <span className="text-[11px] sm:text-xs font-bold text-amber-300 tracking-wide group-hover:text-white transition-colors">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0" />
+              <span className="text-[11px] sm:text-xs font-bold text-amber-300 tracking-wide group-hover:text-white transition-colors font-sans whitespace-nowrap">
                 <span className="sm:hidden">130 Hạ Đình, Thanh Xuân, Hà Nội</span>
                 <span className="hidden sm:inline">ĐỘNG LỰC TOWER • 130 HẠ ĐÌNH, THANH XUÂN, HÀ NỘI</span>
               </span>
@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({
               <h1 className="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
                 {PROJECT_INFO.slogan}
               </h1>
-              <p className="text-sm sm:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed">
+              <p className="text-sm sm:text-lg lg:text-xl text-slate-300 font-medium leading-relaxed font-sans">
                 {PROJECT_INFO.subTitle}
               </p>
             </div>
@@ -82,51 +82,51 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="rounded-2xl bg-gradient-to-b from-[#0b2152]/90 via-[#07193f]/95 to-[#040f28] border border-amber-400/35 p-3.5 sm:p-5 shadow-2xl backdrop-blur-md">
               
               {/* Top Row: Price Headline & VAT badge */}
-              <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-800/90">
+              <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-800/90 font-sans">
                 <div>
-                  <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider block mb-0.5">
+                  <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider block mb-0.5 font-sans">
                     Mức giá hấp dẫn nhất Thanh Xuân
                   </span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="font-serif-luxury font-black text-2xl sm:text-4xl text-amber-400 drop-shadow-[0_2px_10px_rgba(251,191,36,0.35)]">
+                  <div className="flex items-baseline gap-2 font-sans flex-wrap">
+                    <span className="font-sans font-black text-2xl sm:text-4xl text-amber-400 drop-shadow-[0_2px_10px_rgba(251,191,36,0.35)] tracking-tight">
                       {PROJECT_INFO.pricePerSqmHeadline}
                     </span>
-                    <span className="px-2 py-0.5 rounded bg-red-600 text-[10px] sm:text-xs font-black uppercase text-white tracking-wide shadow-sm border border-red-400/40">
+                    <span className="px-2 py-0.5 rounded bg-red-600 text-[10px] sm:text-xs font-black uppercase text-white tracking-wide shadow-sm border border-red-400/40 font-sans whitespace-nowrap">
                       {PROJECT_INFO.priceNote}
                     </span>
                   </div>
                 </div>
 
-                <div className="text-[10px] sm:text-xs text-emerald-400 font-semibold flex items-center gap-1.5 bg-emerald-950/60 px-2.5 py-1 rounded-xl border border-emerald-500/30">
+                <div className="text-[10px] sm:text-xs text-emerald-400 font-semibold flex items-center gap-1.5 bg-emerald-950/60 px-2.5 py-1 rounded-xl border border-emerald-500/30 font-sans whitespace-nowrap shrink-0">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   <span>Hỗ trợ vay 70%</span>
                 </div>
               </div>
 
               {/* Bottom Row: 3 Key High-Level Specs in a Clean, Balanced Row */}
-              <div className="grid grid-cols-3 gap-2 pt-3 text-center">
+              <div className="grid grid-cols-3 gap-2 pt-3 text-center font-sans">
                 <div className="bg-slate-950/60 rounded-xl p-2 border border-slate-800/80">
-                  <span className="block text-[10px] text-slate-400">Quy mô</span>
-                  <strong className="block text-xs sm:text-sm font-bold text-white">24 Tầng • 3 Hầm</strong>
+                  <span className="block text-[10px] text-slate-400 font-medium">Quy mô</span>
+                  <strong className="block text-xs sm:text-sm font-bold text-white font-sans">24 Tầng • 3 Hầm</strong>
                 </div>
                 <div className="bg-slate-950/60 rounded-xl p-2 border border-slate-800/80 flex flex-col justify-center">
-                  <span className="block text-[10px] text-slate-400 mb-0.5">Tiêu chuẩn</span>
-                  <strong className="block text-[11px] sm:text-xs font-bold text-amber-300 leading-tight">
+                  <span className="block text-[10px] text-slate-400 mb-0.5 font-medium">Tiêu chuẩn</span>
+                  <strong className="block text-[11px] sm:text-xs font-bold text-amber-300 leading-tight font-sans">
                     Bàn giao thô hoặc Hoàn thiện trọn gói
                   </strong>
                 </div>
                 <div className="bg-slate-950/60 rounded-xl p-2 border border-slate-800/80">
-                  <span className="block text-[10px] text-slate-400">Bàn giao</span>
-                  <strong className="block text-xs sm:text-sm font-bold text-emerald-300">Quý II / 2027</strong>
+                  <span className="block text-[10px] text-slate-400 font-medium">Bàn giao</span>
+                  <strong className="block text-xs sm:text-sm font-bold text-emerald-300 font-sans">Quý II / 2027</strong>
                 </div>
               </div>
             </div>
 
             {/* Action Buttons: Clean 2-column on mobile, inline on desktop */}
-            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2.5 sm:gap-3 pt-1">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-2.5 sm:gap-3 pt-1 font-sans">
               <button
                 onClick={onOpenConsultation}
-                className="shimmer-sweep py-3 sm:py-3.5 px-3 sm:px-6 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-xs sm:text-sm tracking-wide shadow-lg shadow-red-600/40 border border-red-400/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-1.5 text-center"
+                className="shimmer-sweep py-3 sm:py-3.5 px-3 sm:px-6 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-xs sm:text-sm tracking-wide shadow-lg shadow-red-600/40 border border-red-400/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-1.5 text-center font-sans whitespace-nowrap"
               >
                 <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
                 <span>Nhận Bảng Giá</span>
@@ -134,7 +134,7 @@ export const Hero: React.FC<HeroProps> = ({
 
               <button
                 onClick={onSearchClick}
-                className="py-3 sm:py-3.5 px-3 sm:px-5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm border border-slate-700/90 hover:border-amber-400/50 transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md hover:-translate-y-0.5 text-center"
+                className="py-3 sm:py-3.5 px-3 sm:px-5 rounded-xl bg-slate-850 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm border border-slate-700/90 hover:border-amber-400/50 transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md hover:-translate-y-0.5 text-center font-sans whitespace-nowrap"
               >
                 <span>Xem Căn Hộ</span>
                 <ArrowRight className="w-3.5 h-3.5 text-amber-400 shrink-0" />
@@ -142,10 +142,10 @@ export const Hero: React.FC<HeroProps> = ({
 
               <a
                 href={`tel:${PROJECT_INFO.hotline.replace(/\s+/g, '')}`}
-                className="hidden sm:flex items-center gap-2 px-4 py-3.5 rounded-xl bg-[#041233]/80 hover:bg-[#061845] border border-amber-400/30 hover:border-amber-400/60 text-amber-300 hover:text-amber-200 text-sm font-bold transition-all shadow-md hover:-translate-y-0.5"
+                className="hidden sm:flex items-center gap-2 px-4 py-3.5 rounded-xl bg-[#041233]/80 hover:bg-[#061845] border border-amber-400/30 hover:border-amber-400/60 text-amber-300 hover:text-amber-200 text-sm font-bold transition-all shadow-md hover:-translate-y-0.5 font-sans whitespace-nowrap"
               >
-                <Phone className="w-4 h-4 text-amber-400" />
-                <span className="font-mono tracking-wider">{PROJECT_INFO.hotlineDisplay}</span>
+                <Phone className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="font-sans font-bold tracking-wide">{PROJECT_INFO.hotlineDisplay}</span>
               </a>
             </div>
 

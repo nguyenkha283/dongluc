@@ -8,11 +8,11 @@
     "infra_metro": "/uploads/infra_metro.jpg",
     "infra_road": "/uploads/tong_the_dem.jpg",
     "infra_mega": "/uploads/infra_2_ac4e.jpg",
-    "amenity_mall": "/uploads/amenity_mall.png",
-    "amenity_community": "/uploads/8.png",
-    "amenity_gym": "/uploads/13.png",
+    "amenity_mall": "https://images.unsplash.com/photo-1567449303078-57ad995bd301?auto=format&fit=crop&w=600&q=80",
+    "amenity_community": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=600&q=80",
+    "amenity_gym": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80",
     "amenity_park": "/uploads/13.png",
-    "amenity_kindergarten": "/uploads/11.png",
+    "amenity_kindergarten": "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=80",
     "amenity_lakeview": "/uploads/amenity_lakeview.png",
     "timeline_photo_1": "/uploads/timeline_3_chungcu.jpg",
     "timeline_photo_2": "/uploads/timeline_2_24.png",
@@ -93,5 +93,5 @@
       "fit": "cover"
     }
   },
-  "lastUpdated": "2026-09-17T09:12:44.215Z"
+  "lastUpdated": "2026-09-17T09:32:57.929Z"
 }

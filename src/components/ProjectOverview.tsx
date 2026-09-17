@@ -203,21 +203,21 @@ export const ProjectOverview: React.FC<ProjectOverviewProps> = ({ onOpenConsulta
               </div>
 
               {/* 2. Key Architecture Stats (Pure typography numbers on background, NO boxed cards) */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-5 border-b border-slate-800/80">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-5 border-b border-slate-800/80 font-sans">
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-black text-white block">24</span>
+                  <span className="font-sans text-2xl sm:text-3xl font-black text-white block tracking-tight">24</span>
                   <span className="text-xs text-slate-400 font-medium mt-0.5 block">Tầng nổi hiện đại</span>
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-black text-sky-400 block">3 Hầm</span>
+                  <span className="font-sans text-2xl sm:text-3xl font-black text-sky-400 block tracking-tight">3 Hầm</span>
                   <span className="text-xs text-slate-400 font-medium mt-0.5 block">Đỗ xe ô tô rộng rãi</span>
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-black text-amber-300 block">156</span>
+                  <span className="font-sans text-2xl sm:text-3xl font-black text-amber-300 block tracking-tight">156</span>
                   <span className="text-xs text-slate-400 font-medium mt-0.5 block">Căn hộ (~7-8 căn/sàn)</span>
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-black text-emerald-400 block">Lâu Dài</span>
+                  <span className="font-sans text-2xl sm:text-3xl font-black text-emerald-400 block tracking-tight">Lâu Dài</span>
                   <span className="text-xs text-slate-400 font-medium mt-0.5 block">Sổ hồng sở hữu</span>
                 </div>
               </div>

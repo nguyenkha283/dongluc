@@ -26,17 +26,17 @@ export const LeadCaptureSection: React.FC = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Urgent Campaign Tag */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/50 border border-amber-400/60 text-amber-300 text-xs font-black uppercase tracking-wider mb-3 shadow-[0_0_20px_rgba(245,158,11,0.3)] backdrop-blur-md">
-          <Clock className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-          <span>ƯU ĐÃI CHỈ ÁP DỤNG ĐẾN 30/09/2026</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/50 border border-amber-400/60 text-amber-300 text-xs font-black uppercase tracking-wider mb-3 shadow-[0_0_20px_rgba(245,158,11,0.3)] backdrop-blur-md font-sans">
+          <Clock className="w-3.5 h-3.5 text-amber-400 animate-pulse shrink-0" />
+          <span className="font-sans font-bold whitespace-nowrap">ƯU ĐÃI CHỈ ÁP DỤNG ĐẾN 30/09/2026</span>
         </div>
 
-        <h2 className="font-serif-luxury text-2xl sm:text-4xl font-black text-white tracking-tight mb-2 uppercase">
+        <h2 className="font-sans text-2xl sm:text-4xl font-black text-white tracking-tight mb-2 uppercase">
           ĐĂNG KÝ NHẬN THÔNG TIN & BẢNG GIÁ
         </h2>
         
-        <p className="font-serif-luxury italic text-base sm:text-xl text-amber-200/90 font-medium mb-6 drop-shadow">
-          “Nơi giá trị được dựng xây — Cơ hội sở hữu căn hộ với giá chỉ từ 7x triệu/m² (ĐÃ BAO GỒM VAT)”
+        <p className="font-sans text-base sm:text-xl text-amber-200/90 font-medium mb-6 drop-shadow">
+          “Nơi giá trị được dựng xây — Cơ hội sở hữu căn hộ với giá chỉ từ <span className="font-black text-amber-300">7x triệu/m²</span> (ĐÃ BAO GỒM VAT)”
         </p>
 
         {/* Lead Capture Box */}

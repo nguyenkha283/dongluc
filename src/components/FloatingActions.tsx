@@ -105,8 +105,8 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({
           title="Gọi hotline tư vấn trực tiếp"
         >
           <span className="absolute -inset-1 rounded-full bg-red-500/30 animate-ping pointer-events-none" />
-          <Phone className="w-4 h-4 text-amber-300 animate-bounce" />
-          <span className="font-mono tracking-wider">{PROJECT_INFO.hotlineDisplay}</span>
+          <Phone className="w-4 h-4 text-amber-300 animate-bounce shrink-0" />
+          <span className="font-sans font-bold tracking-wide whitespace-nowrap">{PROJECT_INFO.hotlineDisplay}</span>
         </a>
       </div>
     </>
