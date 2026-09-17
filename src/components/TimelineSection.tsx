@@ -252,7 +252,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({ onOpenConsulta
 
               {/* Info text & action */}
               <div className="bg-slate-950/70 p-2.5 rounded-xl border border-slate-800/80 mb-2.5">
-                <h4 className="font-sans font-bold text-sm text-white mb-0.5">
+                <h4 className="font-serif-luxury font-bold text-sm text-white mb-0.5">
                   {currentStep.title}
                 </h4>
                 <p className="text-[11px] text-slate-300 leading-snug">

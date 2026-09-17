@@ -29,39 +29,9 @@
     "floorplan_3pn": "/assets/units/can_03_3ngu.webp",
     "floorplan_3pn_1": "/assets/units/can_03_3ngu.webp",
     "floorplan_3pn_2": "/assets/units/can_06_3ngu.webp",
-    "floorplan_3pn_3": "/assets/units/can_09_3ngu.webp",
-    "floorplan_building": "/assets/floorplates/floor_unit_05.png",
-    "floorplan_level_unit_01": "/assets/floorplates/floor_unit_01.png",
-    "floorplan_level_unit_02": "/assets/floorplates/floor_unit_02.png",
-    "floorplan_level_unit_03": "/assets/floorplates/floor_unit_03.png",
-    "floorplan_level_unit_04": "/assets/floorplates/floor_unit_04.png",
-    "floorplan_level_unit_05": "/assets/floorplates/floor_unit_05.png",
-    "floorplan_level_unit_06": "/assets/floorplates/floor_unit_06.png",
-    "floorplan_level_unit_07": "/assets/floorplates/floor_unit_07.png",
-    "floorplan_level_unit_08": "/assets/floorplates/floor_unit_08.png",
-    "floorplan_level_unit_09": "/assets/floorplates/floor_unit_09.png",
-    "floorplan_level_2pn_1": "/assets/floorplates/floor_unit_01.png",
-    "floorplan_level_2pn_2": "/assets/floorplates/floor_unit_02.png",
-    "floorplan_level_2pn_3": "/assets/floorplates/floor_unit_07.png",
-    "floorplan_level_2pn_4": "/assets/floorplates/floor_unit_04.png",
-    "floorplan_level_2pn_5": "/assets/floorplates/floor_unit_05.png",
-    "floorplan_level_2pn_6": "/assets/floorplates/floor_unit_08.png",
-    "floorplan_level_3pn_1": "/assets/floorplates/floor_unit_03.png",
-    "floorplan_level_3pn_2": "/assets/floorplates/floor_unit_06.png",
-    "floorplan_level_3pn_3": "/assets/floorplates/floor_unit_09.png",
-    "floorplan_level_3pn_6": "/assets/floorplates/floor_unit_06.png",
-    "floorplan_level_3pn_9": "/assets/floorplates/floor_unit_09.png"
+    "floorplan_3pn_3": "/assets/units/can_09_3ngu.webp"
   },
   "styles": {
-    "floorplan_level_unit_01": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_02": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_03": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_04": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_05": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_06": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_07": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_08": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
-    "floorplan_level_unit_09": { "positionX": 50, "positionY": 50, "zoom": 100, "fit": "contain" },
     "hero_building": {
       "positionX": 20,
       "positionY": 50,
@@ -87,5 +57,5 @@
       "fit": "cover"
     }
   },
-  "lastUpdated": "2026-09-16T08:09:02.478Z"
+  "lastUpdated": "2026-09-17T05:00:08.566Z"
 }

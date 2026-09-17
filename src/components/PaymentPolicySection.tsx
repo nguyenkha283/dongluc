@@ -120,7 +120,7 @@ export const PaymentPolicySection: React.FC<PaymentPolicySectionProps> = ({ onOp
             <span>CHÍNH SÁCH BÁN HÀNG CHÍNH THỨC</span>
           </div>
 
-          <h2 className="font-serif-luxury sm:font-sans text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight uppercase leading-snug">
+          <h2 className="font-serif-luxury text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight uppercase leading-snug">
             ƯU ĐÃI ĐẶC QUYỀN <span className="text-amber-400 drop-shadow-[0_2px_10px_rgba(251,191,36,0.3)]">ĐỘNG LỰC TOWER</span>
           </h2>
           <p className="text-slate-300 text-xs sm:text-sm mt-1.5 max-w-2xl mx-auto leading-relaxed px-2">
@@ -352,7 +352,7 @@ export const PaymentPolicySection: React.FC<PaymentPolicySectionProps> = ({ onOp
                 <Calendar className="w-3 h-3" />
                 Giai đoạn đặt chỗ
               </span>
-              <h3 className="font-sans font-black text-base text-white uppercase tracking-wide leading-snug">
+              <h3 className="font-serif-luxury font-black text-base text-white uppercase tracking-wide leading-snug">
                 CHIẾT KHẤU<br />ĐẶT CỌC
               </h3>
               <div className="w-8 h-0.5 bg-amber-400/50 mx-auto mt-2 rounded-full" />
@@ -387,7 +387,7 @@ export const PaymentPolicySection: React.FC<PaymentPolicySectionProps> = ({ onOp
                 <TrendingDown className="w-3 h-3" />
                 Thanh toán nhanh
               </span>
-              <h3 className="font-sans font-black text-base text-white uppercase tracking-wide leading-snug">
+              <h3 className="font-serif-luxury font-black text-base text-white uppercase tracking-wide leading-snug">
                 CHIẾT KHẤU<br />THANH TOÁN SỚM
               </h3>
               <div className="w-8 h-0.5 bg-sky-400/50 mx-auto mt-2 rounded-full" />
@@ -426,7 +426,7 @@ export const PaymentPolicySection: React.FC<PaymentPolicySectionProps> = ({ onOp
                 <Percent className="w-3 h-3" />
                 Tiến độ chuẩn CĐT
               </span>
-              <h3 className="font-sans font-black text-base text-white uppercase tracking-wide leading-snug">
+              <h3 className="font-serif-luxury font-black text-base text-white uppercase tracking-wide leading-snug">
                 CHIẾT KHẤU<br />THANH TOÁN TIẾN ĐỘ
               </h3>
               <div className="w-8 h-0.5 bg-emerald-400/50 mx-auto mt-2 rounded-full" />
@@ -455,7 +455,7 @@ export const PaymentPolicySection: React.FC<PaymentPolicySectionProps> = ({ onOp
                 <Landmark className="w-3 h-3" />
                 Gói tài trợ ngân hàng
               </span>
-              <h3 className="font-sans font-black text-sm lg:text-base text-white uppercase tracking-wide leading-snug">
+              <h3 className="font-serif-luxury font-black text-sm lg:text-base text-white uppercase tracking-wide leading-snug">
                 HỖ TRỢ LÃI SUẤT 0%<br /><span className="text-amber-300">VỚI 65% GTCH</span>
               </h3>
               <div className="w-8 h-0.5 bg-amber-400/50 mx-auto mt-2 rounded-full" />

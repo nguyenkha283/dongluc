@@ -98,7 +98,7 @@ export const InfrastructureSection: React.FC<InfrastructureSectionProps> = ({ on
 
               {/* Bottom Text Area: Frosted backdrop-blur to make text crystal clear */}
               <div className="relative z-10 p-4 sm:p-5 pt-8 bg-gradient-to-t from-slate-950/95 via-slate-950/80 to-transparent backdrop-blur-[2px]">
-                <h3 className="font-sans font-bold text-sm sm:text-[15px] text-white uppercase tracking-wide leading-snug mb-1.5 group-hover:text-amber-300 transition-colors drop-shadow-sm">
+                <h3 className="font-serif-luxury font-bold text-sm sm:text-[15px] text-white uppercase tracking-wide leading-snug mb-1.5 group-hover:text-amber-300 transition-colors drop-shadow-sm">
                   {item.title}
                 </h3>
                 <p className="text-xs text-slate-200/90 leading-relaxed drop-shadow-sm line-clamp-3">

@@ -110,16 +110,16 @@ export const DEFAULT_IMAGE_SLOTS: Record<string, ImageSlotInfo> = {
     id: 'map_location',
     name: 'Bản Đồ Vị Trí 130 Hạ Đình',
     section: 'Vị Trí Tâm Điểm',
-    defaultUrl: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1000&q=80',
-    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình',
+    defaultUrl: '/assets/lkv_dongluc_tower_01.jpg',
+    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình (LKV ĐỘNG LỰC TOWER-01)',
     suggestedSize: '1000 x 700 px'
   },
   location_map: {
     id: 'location_map',
     name: 'Bản Đồ Kết Nối Vị Trí',
     section: 'Vị Trí Tâm Điểm',
-    defaultUrl: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1000&q=80',
-    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình',
+    defaultUrl: '/assets/lkv_dongluc_tower_01.jpg',
+    description: 'Sơ đồ vị trí và kết nối giao thông 130 Hạ Đình (LKV ĐỘNG LỰC TOWER-01)',
     suggestedSize: '1000 x 700 px'
   },
   infra_metro: {

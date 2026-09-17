@@ -169,7 +169,7 @@ export const ImageUploaderModal: React.FC = () => {
             <span className="text-[10px] sm:text-xs font-bold text-amber-400 uppercase tracking-widest block">
               Tùy Chỉnh & Căn Chỉnh Khung Ảnh
             </span>
-            <h3 className="font-sans text-base sm:text-lg font-black text-white">
+            <h3 className="font-serif-luxury text-base sm:text-lg font-black text-white">
               {slotInfo?.name || 'Khung Ảnh'}
             </h3>
             <p className="text-[11px] sm:text-xs text-slate-400">

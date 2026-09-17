@@ -107,7 +107,7 @@ export const ImageManagerModal: React.FC = () => {
                 Tổng cộng {allSlots.length} vị trí khung ảnh trên website
               </span>
             </div>
-            <h3 className="font-sans text-base sm:text-xl font-black text-white">
+            <h3 className="font-serif-luxury text-base sm:text-xl font-black text-white">
               Quản Lý Toàn Bộ Khung Ảnh Website Động Lực Tower
             </h3>
           </div>

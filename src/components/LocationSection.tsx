@@ -170,6 +170,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenConsulta
               <div className="relative h-[280px] sm:h-[340px] w-full">
                 <ImageFrameSlot
                   slotId="location_map"
+                  defaultUrl="/assets/lkv_dongluc_tower_01.jpg"
                   label="Bản Đồ Kết Nối Vị Trí"
                   aspectRatio="h-full w-full"
                   className="h-full w-full object-cover"

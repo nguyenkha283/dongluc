@@ -301,7 +301,7 @@ export const AmenitiesSection: React.FC<AmenitiesSectionProps> = ({ onOpenConsul
                       <Icon className="w-3.5 h-3.5 text-amber-400" />
                       <span>{item.tag}</span>
                     </div>
-                    <h3 className="font-sans font-bold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors leading-snug drop-shadow-md">
+                    <h3 className="font-serif-luxury font-bold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors leading-snug drop-shadow-md">
                       {item.title}
                     </h3>
                     <p className="text-[11px] sm:text-xs text-slate-300 line-clamp-2 mt-1 leading-relaxed">

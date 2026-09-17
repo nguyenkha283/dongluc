@@ -115,7 +115,7 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
               </span>
             </div>
             
-            <h3 className="font-sans font-black text-sm sm:text-base text-white tracking-tight leading-tight truncate">
+            <h3 className="font-serif-luxury font-black text-sm sm:text-base text-white tracking-tight leading-tight truncate">
               {activeType === 'quotation' ? 'Đăng Ký Nhận Báo Giá 7x tr/m² (VAT)' : 'Đặt Lịch Xe Đón Xem Thực Tế'}
             </h3>
           </div>
@@ -147,7 +147,7 @@ export const ConsultationForm: React.FC<ConsultationFormProps> = ({
                 </div>
               </div>
 
-              <h4 className="font-sans text-xl font-black text-white mb-1.5">
+              <h4 className="font-serif-luxury text-xl font-black text-white mb-1.5">
                 Đăng Ký Thành Công!
               </h4>
               <p className="text-slate-300 text-xs sm:text-sm max-w-md mx-auto mb-4 leading-relaxed">
