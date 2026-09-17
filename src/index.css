@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #030d22;
+    color: #e2e8f0;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+.font-brush {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 800;
+}
+
+.font-hand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030d22;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Halftone Dot Pattern Overlays */
+.halftone-red {
+  background-image: radial-gradient(#ef4444 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+.halftone-blue {
+  background-image: radial-gradient(#38bdf8 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+.halftone-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+}
+
+/* Key Visual Tone Gradients */
+.bg-kv-navy {
+  background: radial-gradient(ellipse at top right, #102454 0%, #05122e 45%, #020917 100%);
+}
+
+.bg-kv-card {
+  background: linear-gradient(145deg, rgba(12, 31, 71, 0.85) 0%, rgba(5, 18, 46, 0.95) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* Neon Glow Accents */
+.glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(6, 182, 212, 0.45);
+}
+.glow-red {
+  box-shadow: 0 0 30px -4px rgba(239, 68, 68, 0.5);
+}
+
+/* True Parallelogram slanted cards matching Key Visual mockup */
+.parallelogram-box {
+  transform: skewX(-10deg);
+}
+.parallelogram-inner {
+  transform: skewX(10deg);
+}
+@media (max-width: 640px) {
+  .parallelogram-box {
+    transform: skewX(-6deg);
+  }
+  .parallelogram-inner {
+    transform: skewX(6deg);
+  }
+}
+
+/* Backward compatibility for clip-parallelogram */
+.clip-parallelogram {
+  transform: skewX(-10deg);
+}
+@media (max-width: 640px) {
+  .clip-parallelogram {
+    transform: skewX(-6deg);
+  }
+}
+
+
+/* Diagonal slice card for target audience cards */
+.clip-diagonal-card {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+@media (max-width: 768px) {
+  .clip-diagonal-card {
+    clip-path: none;
+  }
+}
+
+/* Dynamic Red Brush Highlight styling */
+.brush-red {
+  position: relative;
+  display: inline-block;
+}
+.brush-red::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -10px;
+  right: -10px;
+  bottom: 5%;
+  background: linear-gradient(90deg, #dc2626 0%, #ef4444 50%, #ea580c 100%);
+  border-radius: 4px;
+  transform: skewX(-12deg) rotate(-1.5deg);
+  z-index: -1;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.55);
+}
+
+/* Key Visual Decorative Brush Streak at Top-Right & Bottom-Right */
+.kv-brush-corner-red {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 320px;
+  height: 280px;
+  background: radial-gradient(circle at top right, rgba(239, 68, 68, 0.85) 0%, rgba(220, 38, 38, 0.6) 35%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+/* Neon laser beam streak */
+.neon-beam-blue {
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #38bdf8, #0284c7, transparent);
+  box-shadow: 0 0 12px #38bdf8, 0 0 24px #0284c7;
+  transform: rotate(-45deg);
+  pointer-events: none;
+}
+
+/* Ambient Floating Glow Animations */
+@keyframes floatGlow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, 40px) scale(1.08);
+  }
+  100% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+}
+
+@keyframes floatGlowReverse {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-35px, -30px) scale(1.1);
+  }
+  100% {
+    transform: translate(25px, -15px) scale(0.92);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.06);
+  }
+}
+
+.animate-float-glow {
+  animation: floatGlow 18s ease-in-out infinite alternate;
+}
+
+.animate-float-glow-reverse {
+  animation: floatGlowReverse 22s ease-in-out infinite alternate;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 9s ease-in-out infinite alternate;
+}
+
+/* Button Shimmer Sweep Effect */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  40%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-sweep::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  left: 0;
+  width: 50%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: shimmerSweep 4.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Seamless Luminous Section Divider */
+.seamless-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(56, 189, 248, 0.25) 30%, rgba(245, 158, 11, 0.25) 70%, transparent 100%);
+  position: relative;
+}
+
+.seamless-divider::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.6) 0%, transparent 70%);
+  filter: blur(1px);
+}
+
+/* Luxury Card Glow on Hover */
+.glow-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 12px 30px -8px rgba(56, 189, 248, 0.25), 0 0 15px 0 rgba(56, 189, 248, 0.15);
+}
+
